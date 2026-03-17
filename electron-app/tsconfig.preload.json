@@ -1,0 +1,10 @@
+{
+  "compilerOptions": { 
+    "outDir": "dist/preload",
+    "target": "ES2020",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true,
+    "skipLibCheck": true},
+  "include": ["preload/**/*.ts"]
+}

@@ -1,0 +1,28 @@
+{
+  "gares": [
+    {
+      "id": "1",
+      "name": "Paris Gare du Nord"
+    }
+  ],
+  "destinations": [
+    {
+      "id": "1",
+      "city": "Lyon"
+    }
+  ],
+  "trains": [
+    {
+      "id": "1",
+      "name": "TGV 8401",
+      "departure_gare_id": 1,
+      "destination_id": 1,
+      "departure_time": "2026-03-01T08:00:00",
+      "arrival_time": "2026-03-01T10:00:00",
+      "status": "ONTIME",
+      "travel_number": 8401
+    }
+  ],
+  "voyageurs": [],
+  "tickets": []
+}
