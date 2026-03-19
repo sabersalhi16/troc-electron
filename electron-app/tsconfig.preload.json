@@ -1,10 +1,14 @@
 {
-  "compilerOptions": { 
-    "outDir": "dist/preload",
-    "target": "ES2020",
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "dist",
+    "rootDir": "preload",
+    "strict": true,
+    "types": ["node"],
     "esModuleInterop": true,
-    "skipLibCheck": true},
+    "skipLibCheck": true
+  },
   "include": ["preload/**/*.ts"]
 }

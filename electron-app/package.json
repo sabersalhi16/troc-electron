@@ -5,13 +5,13 @@
   "license": "MIT",
   "author": "",
   "type": "module",
-  "main": "dist/main/index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "dev:renderer": "vite",
     "dev:main": "tsc -p tsconfig.main.json -w",
     "dev:preload": "tsc -p tsconfig.preload.json -w",
-    "dev:electron": "wait-on tcp:5173 && nodemon --watch dist/main --watch dist/preload --exec \"electron dist/main/index.js\"",
+    "dev:electron": "wait-on tcp:5173 && nodemon --watch dist --exec \"electron dist/index.js\"",
     "dev": "concurrently -k \"npm:dev:renderer\" \"npm:dev:main\" \"npm:dev:preload\" \"npm:dev:electron\"",
 
     "build:main": "tsc -p tsconfig.main.json",
